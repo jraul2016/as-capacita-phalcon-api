@@ -29,6 +29,7 @@ class UsersController extends RESTController
                         'Users.iUserId',
                         'Users.sName',
                         'Users.sEmail',
+                        'Users.dtCreated',
                         'Phones.iPhoneId',
                         'Phones.iUserId as iPhoneUserId',
                         'Phones.sPhone',

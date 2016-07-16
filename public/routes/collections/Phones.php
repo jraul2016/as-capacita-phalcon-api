@@ -4,7 +4,7 @@ return call_user_func(
         $userCollection = new \Phalcon\Mvc\Micro\Collection();
 
         $userCollection
-            ->setPrefix('/v1/phones')
+            ->setPrefix('/v1/phones2')
             ->setHandler('\App\Users\Controllers\PhonesController')
             ->setLazy(true);
 
