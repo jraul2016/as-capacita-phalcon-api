@@ -1,0 +1,115 @@
+{
+	"variables": [],
+	"info": {
+		"name": "as-capacita-project-api",
+		"_postman_id": "762e4e2d-305d-abc9-abc6-250b201ecd12",
+		"description": "API REST com Phalcon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/",
+			"request": {
+				"url": "192.168.115.126:8080/v1/users/",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Rota raiz da API"
+			},
+			"response": []
+		},
+		{
+			"name": "List Users",
+			"request": {
+				"url": "192.168.115.126:8080/v1/livros/",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Busca usuários no banco de dados"
+			},
+			"response": []
+		},
+		{
+			"name": "List User",
+			"request": {
+				"url": "192.168.115.126:8080/v1/livros/2",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Busca um usuário no banco de dados"
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"url": "192.168.115.126:8080/v1/livros/",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sName",
+							"value": "otavio",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sEmail",
+							"value": "otavio@agenciasys.com.br",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Adiciona um usuário no banco de dados"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User",
+			"request": {
+				"url": "192.168.115.126:8080/v1/livros/2",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "sName",
+							"value": "otávio",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Edita um usuário no banco de dados"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"url": "192.168.115.126:8080/v1/livros/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Remove um usuário do banco de dados"
+			},
+			"response": []
+		}
+	]
+}
